@@ -55,25 +55,25 @@ app.use("/admin",adminRouter);
 // review array
 const reviews = [
     {
-        reader : "Manohar Varma",
+        reader : "Arjun",
         rating : "Good",
         img : "readr1.jpeg",
-        time : "- 3 hours ago",
-        about : "Exactly what I wanted, and then some. This app provides a tool to store a list of all your book, comics and computer games."
+        time : "- 8 hours ago",
+        about : "Very helpful app, liked it."
     },
     {
-        reader : "Ravindra Nadh",
+        reader : "Remya",
         rating : "Excellent",
         img : "readr2.jpeg",
-        time : "- Yesterday",
-        about : "This app has finally helped us catalog our large and disarrayed library and to keep track of the books we have out on loan."
+        time : "- 5 days ago",
+        about : "Very good app, so much helpful.liked the interface"
     },
     {
-        reader : "Shalini Das",
+        reader : "Gokul",
         rating : "Satisfactory",
         img : "readr3.jpeg",
-        time : "- Just now",
-        about : "I get the comment section is designed for added things, but its not an organized system. Adding a small spot for checking if its signed or not would be nice."
+        time : "- last week",
+        about : "nice app, Could have added more features."
     }
 ]
 
