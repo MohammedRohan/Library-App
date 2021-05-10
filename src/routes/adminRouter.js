@@ -1,6 +1,7 @@
 const express = require("express");
 // router
 const adminRouter = express.Router();
+const Bookdata = require('../model/Bookdata');
 
 // router function
 function router(nav){
@@ -22,8 +23,16 @@ function router(nav){
     });
 
     // add book/author to library
-    adminRouter.get("/add",(req,res)=>{
-        res.send("I am added");
+    adminRouter.post("/add",(req,res)=>{
+      var item = {
+        title:req.body.title,
+        author:req.body.author,
+        genre:req.body.genre,
+        image:req.body.image,
+      }
+       var book = Bookdata(item)
+       book.save();
+       res.redirect('/books');
     });
 
     return adminRouter;

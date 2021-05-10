@@ -99,48 +99,16 @@
           
           
           <!--Form-->
-          <form class="col-lg-8 upform" action="/admin/add">
-            <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Title</label>
-                <input type="text" class="form-control" id="booktitle" required>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Author</label>
-                <input type="text" class="form-control" id="bookauthor" required>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Genre</label>
-                <select class="form-control" aria-label="Default select example" id="bookgenre">
-                    <!-- <option selected>Novel</option> -->
-                    <option selected value="1">Novel</option>
-                    <option value="2">Fiction</option>
-                    <option value="3">Autobiography</option>
-                    <option value="4">Non-fiction</option>
-                    <option value="5">Short stories</option>
-                    <option value="6">Atlases</option>
-                    <option value="7">Poetry</option>
-                    <option value="8">Article</option>
-                    <option value="9">Dictionary</option>
-                    <option value="10">Biography</option>
-                    <option value="11">Fantasy</option>
-                    <option value="12">Adventure</option>
-                    <option value="13">Ohters</option>
-                </select>
-                <div id="emailHelp" class="form-text">eg:- Novel,Autobiography,Fiction,etc.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputName" class="form-label">Image</label>
-              <input type="file" class="form-control" id="bookimg" required>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputName" class="form-label">About</label>
-                <textarea class="form-control is-invalid" id="bookabout" placeholder="Write something about this book" required></textarea>
-            </div>
-            <br>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary" id="up-btn">Add Book</button>
-            </div>
+          <form method="POST" action="/admin/add">
+            Title:<input type="text" name="title"><br>
+            Suthor:<input type="text" name="author"><br>
+            Genre:<input type="text" name="genre"><br>
+            Image:<input type="file" name="image"><br>
+            <button type="submit">Add</button><br>
+            
           </form>
+         
+        
           
           <!--/Form-->
           

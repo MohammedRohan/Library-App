@@ -33,13 +33,14 @@ const nav = [
 ]
 
 // imports Routers
-const booksRouter = require("./src/routes/booksRouter")(nav);
+const booksRouter =  require("./src/routes/booksRouter")(nav);
 const authorsRouter = require("./src/routes/authorsRouter")(nav);
 const signupRouter = require("./src/routes/signupRouter")(nav);
 const loginRouter = require("./src/routes/loginRouter")(nav);
 const adminRouter = require("./src/routes/adminRouter")(nav);
 
 // static files
+app.use(express.urlencoded({extended:true}));
 app.use(express.static("./public"));
 // ejs template engine
 app.set("view engine","ejs");
